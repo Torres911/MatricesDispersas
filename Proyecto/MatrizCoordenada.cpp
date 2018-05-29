@@ -13,6 +13,6 @@ class MatrizCoordenada{
 		vector<int> ObtenerFilaDispersas();
 		vector<int> ObtenerColumnasDispersa();
 		int ObtenerNumeroElementos();
-		void ModificarPosicion();
+		void ModificarPosicion(int x, int y, int v);
 	
 };
