@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <string>
 
+using namespace std;
 
 class MatrizCoordenada{
 	private:
@@ -12,6 +13,8 @@ class MatrizCoordenada{
 		vector<int> columnas;
 		int x, y;
 	public:
+		MatrizCoordenada(vector< vector<int> > &matriz);
+		vector< vector<int> > ObtenerMatrizCompleta();
 		vector<int> ObtenerFilas();
 		vector<int> ObtenerColumnas();
 		vector<int> ObtenerFilaDispersas();
