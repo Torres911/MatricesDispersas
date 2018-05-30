@@ -1,8 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cstdlib>
-#include <string>
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<cstdlib>
+#include<stdio.h>
+#include<string>
 
 
 class MatrizCoordenada{
@@ -18,5 +19,5 @@ class MatrizCoordenada{
 		vector<int> ObtenerColumnasDispersa();
 		int ObtenerNumeroElementos();
 		void ModificarPosicion(int x, int y, int v);
-	
+
 };
