@@ -52,3 +52,14 @@ MatrizDispersa OperacionMatrizDispersa::sumarMatrices(MatrizDispersa m1, MatrizD
 	}
 	return temp;
 }
+
+vector<int> productoMatrizVector(MatrizDispersa m1, vector<int> temp){
+	vector<int> temp1;
+	
+	for(int i = 0; i < m1.filMat; i++){
+		for(int j = 0; j < m1.colMat; j++){
+			temp1[i] += m1.obtenerElemento(i,j) * temp[i];
+		}
+	}
+	return temp1;
+}
