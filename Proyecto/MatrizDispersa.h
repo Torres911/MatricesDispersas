@@ -13,5 +13,4 @@ class MatrizDispersa{
 		int obtenerNumeroElementos();
 		int obtenerElemento(int x, int y);
 		void modificarPosicion(int x, int y, int v);
-
 };
