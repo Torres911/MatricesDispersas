@@ -3,6 +3,8 @@
 #include<algorithm>
 #include<stdio.h>
 
+using namespace std;
+
 class MatrizDispersa{
 	public:
 		vector<vector<int>> obtenerMatrizCompleta();
