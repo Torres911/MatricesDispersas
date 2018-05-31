@@ -33,13 +33,6 @@ class MatLE:public MatrizDispersa{
       vector<int> obtenerColumnaDispersa(int col);
       int obtenerNumeroElementos();
       void modificarPosicion(int fil, int col, int elem);
-
-   		// // Analizadoras 
-   		int obtenerMayorElem();
-   		bool verificarElem(int elem);
-   		// void sumaMatrices(MatLE &mat);
-     //  MatLE matrizVector(vector<int> vec);
-     //  MatLE matrizTrans();
 };
 
 #endif
