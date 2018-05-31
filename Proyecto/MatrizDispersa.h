@@ -6,10 +6,9 @@
 using namespace std;
 
 class MatrizDispersa{
-	private:
-		int filMat;
-		int colMat;
 	public:
+		int colMat;
+		int filMat;
 		void crearMatrizDispersa(vector< vector<int> > &mat);
 		vector< vector<int> > obtenerMatrizCompleta();
 		vector<int> obtenerFila(int x);
