@@ -1,6 +1,6 @@
 #include "OperacionesMatrizDispersa"
 
-bool MatLE::verificarElem(matrizDispersa m1, int v){
+bool OperacionesMatrizDispersa::verificarElemento(matrizDispersa m1, int v){
   bool isElem = false;
   int tmp;
 
@@ -14,7 +14,7 @@ bool MatLE::verificarElem(matrizDispersa m1, int v){
   return isElem;
 }
 
-int MatLE::obtenerMayorElem(matrizDispersa m1){
+int OperacionesMatrizDispersa::obtenerMayorElemento(matrizDispersa m1){
 	int mayorElem;
 	mayorElem = m1.obtenerElemento(0, 0);
 
