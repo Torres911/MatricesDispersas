@@ -52,7 +52,7 @@ vector<int> ColumnaCompresa::obtenerColumnaDispersa(int x){
 
 }
 int ColumnaCompresa::obtenerNumeroElementos(){
-
+	return valores.size();
 }
 int ColumnaCompresa::obtenerElemento(int x, int y){
 

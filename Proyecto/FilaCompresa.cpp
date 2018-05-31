@@ -38,7 +38,7 @@ vector<vector<int>> FilaCompresa::obtenerMatrizCompleta(){
 	return matC;
 }
 vector<int> FilaCompresa::obtenerFila(int x){
-	vector<int> fila;
+
 
 }
 vector<int> FilaCompresa::obtenerColumna(int x){
