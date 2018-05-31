@@ -1,6 +1,8 @@
 #include"ColumnaCompresa.h"
 
 void crearMatrizDispersa(vector< vector<int> > &mat){
+	filMat = mat.size();
+	colMat = mat[0].size();
 	vector<int> val;
 	vector<int> fila;
 	vector<int> colComp;
