@@ -4,7 +4,7 @@ class ColumnaCompresa: public MatrizDispersa{
 	private:
 		vector<int> valores;
 		vector<int> columnas;
-		vector<int> compr;
+		vector<int> comprc;
 	public:
 		vector<vector<int>> obtenerMatrizCompleta();
 		vector<int> obtenerFila(int x);
