@@ -13,6 +13,7 @@ class MatrizCoordenada{
 		vector<int> columnas;
 		int x, y;
 	public:
+		vector<vector<int>> ObtenerMatrizCompleta();
 		vector<int> ObtenerFilas();
 		vector<int> ObtenerColumnas();
 		vector<int> ObtenerFilaDispersas();

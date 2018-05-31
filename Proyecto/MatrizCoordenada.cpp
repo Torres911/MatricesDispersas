@@ -1,4 +1,4 @@
-#include "MatrizCoordenada.h"
+#include "OperacionesMatrizDispersa.h"
 
 MatrizCoordenada::MatrizCoordenada(vector< vector<int> > &matriz){
 
@@ -29,5 +29,5 @@ int MatrizCoordenada::ObtenerNumeroElementos(){
 }
 
 void MatrizCoordenada::ModificarPosicion(int x, int y, int v){
-	
+
 }
