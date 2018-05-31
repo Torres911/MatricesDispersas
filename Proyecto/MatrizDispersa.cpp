@@ -8,11 +8,11 @@ vector< vector<int> > MatrizCoordenada::obtenerMatrizCompleta(){
 
 }
 
-vector<int> MatrizCoordenada::obtenerFilas(){
+vector<int> MatrizCoordenada::obtenerFila(){
 
 }
 
-vector<int> MatrizCoordenada::obtenerColumnas(){
+vector<int> MatrizCoordenada::obtenerColumna(){
 
 }
 
@@ -20,7 +20,7 @@ vector<int> MatrizCoordenada::obtenerFilaDispersa(){
 
 }
 
-vector<int> MatrizCoordenada::obtenerColumnasDispersas(){
+vector<int> MatrizCoordenada::obtenerColumnaDispersa(){
 
 }
 
