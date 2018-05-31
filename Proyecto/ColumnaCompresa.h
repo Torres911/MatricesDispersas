@@ -13,5 +13,5 @@ class ColumnaCompresa: public MatrizDispersa{
 		vector<int> obtenerColumnaDispersa(int x);
 		int obtenerNumeroElementos();
 		int obtenerElemento(int x, int y);
-		void modificarPosicion(int x, int y, int v);n
+		void modificarPosicion(int x, int y, int v);
 };
