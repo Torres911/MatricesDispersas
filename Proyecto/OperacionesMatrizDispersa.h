@@ -12,5 +12,4 @@ class OperacionesMatrizDispersa{
 		MatrizDispersa sumaMatrices(MatrizDispersa m1, MatrizDispersa m2);
 		int mayorElemento(MatrizDispersa m1);
 		MatrizDispersa matrizTranspuesta(MatrizDispersa m1);
-
 };
