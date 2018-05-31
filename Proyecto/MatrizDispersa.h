@@ -7,8 +7,8 @@ using namespace std;
 
 class MatrizDispersa{
 	private:
-		int n;
-		int m;
+		int filMat;
+		int colMat;
 	public:
 		void crearMatrizDispersa(vector< vector<int> > &mat);
 		vector< vector<int> > obtenerMatrizCompleta();
