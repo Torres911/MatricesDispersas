@@ -5,6 +5,6 @@ class Coordenada: public MatrizDispersa{
 	private:
 		vector<int> valores;
 		vector<int> columna;
-		vector<int> filas;
-		
+		vector<int> fila;
+
 };

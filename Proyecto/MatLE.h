@@ -21,7 +21,7 @@ class MatLE{
     	int colMat;
       int filMat;
 
-   public:
+  public:
    	  vector<Nodo> mdLista;
 
       // Constructoras
@@ -38,7 +38,7 @@ class MatLE{
       int obtenerNumElem();
       void modificarPosElem(int fil, int col, int elem);
 
-   		// // Analizadoras 
+   		// // Analizadoras
    		int obtenerMayorElem();
    		bool verificarElem(int elem);
    		// void sumaMatrices(MatLE &mat);
