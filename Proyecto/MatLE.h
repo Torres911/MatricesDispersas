@@ -2,8 +2,8 @@
 #ifndef __MD_LISTA
 #define __MD_LISTA
 
-#include <iostream>
-#include <vector>
+#include "MatrizDispersa.h"
+
 
 using namespace std;
 
@@ -16,29 +16,25 @@ class Nodo{
    	 Nodo* sig;
 };
 
-class MatLE{
-	private:
-    	int colMat;
-      int filMat;
-
-  public:
+class MatLE:public MatrizDispersa{
+	 public:
    	  vector<Nodo> mdLista;
 
       // Constructoras
    		MatLE();
 
    		// Modificadoras
-      void crearMatDispersa(vector< vector<int> > mat);
-   		vector< vector<int> > obtenerMatriz();
+      void crearMatDispersa(vector< vector<int> > &mat);
+   		vector< vector<int> > obtenerMatrizCompleta();
    		int obtenerElemento(int fil, int col);
    		vector<int> obtenerFila(int fil);
       vector<int> obtenerColumna(int col);
-      vector<int> obtenerFilaD(int fil);
-      vector<int> obtenerColumnaD(int col);
-      int obtenerNumElem();
-      void modificarPosElem(int fil, int col, int elem);
+      vector<int> obtenerFilaDispersa(int fil);
+      vector<int> obtenerColumnaDispersa(int col);
+      int obtenerNumeroElementos();
+      void modificarPosicion(int fil, int col, int elem);
 
-   		// // Analizadoras
+   		// // Analizadoras 
    		int obtenerMayorElem();
    		bool verificarElem(int elem);
    		// void sumaMatrices(MatLE &mat);
