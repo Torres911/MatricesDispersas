@@ -3,6 +3,6 @@
 class ColumnaCompresa: public MatrizDispersa{
 	private:
 		vector<int> valores;
-		vector<int> columnas;
-		vector<int> comprc;
+		vector<int> filas;
+		vector<int> comprC;
 };

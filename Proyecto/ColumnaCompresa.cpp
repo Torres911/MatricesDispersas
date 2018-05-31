@@ -4,7 +4,7 @@ void crearMatrizDispersa(vector< vector<int> > &mat){
 	filMat = mat.size();
 	colMat = mat[0].size();
 	vector<int> val;
-	vector<int> fila;
+	vector<int> fil;
 	vector<int> colComp;
 	int temp = 0;
 	for(int i = 0; i < mat.size(); i++){
@@ -17,6 +17,10 @@ void crearMatrizDispersa(vector< vector<int> > &mat){
 			}
 		}
 	}
+	valores = val;
+	filas = fil;
+	comprC = colComp;
+
 }
 vector<vector<int>> obtenerMatrizCompleta(){
 
