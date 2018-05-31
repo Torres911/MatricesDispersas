@@ -35,9 +35,11 @@ MatrizDispersa OperacionesMatrizDispersa::matrizTranspuesta(MatrizDispersa m1){
 	
 	for(int i = 0; i < m1.filMat; i++){
 		for(int j = 0; j < m1.colMat; j++){
-			temp.modificarPosicion( i, j, (m1.obtenerElemento(i,j) + m2.obtenerElemento(i,j)));
+			temp.modificarPosicion(i,j,m1.obtenerElemento(j,i));
 		}
 	}
+	
+	return temp;
 }
 
 MatrizDispersa OperacionMatrizDispersa::sumarMatrices(MatrizDispersa m1, MatrizDispersa m2){
