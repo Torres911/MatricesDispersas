@@ -42,12 +42,15 @@ vector<vector<int>> FilaCompresa::obtenerMatrizCompleta(){
 }
 vector<int> FilaCompresa::obtenerFila(int x){
 	vector<int> fil;
-
+	for(int i = comprF[x-1]; i < comprF[x]; i++){
+		fil[i] = valores[i];
+	}
+	return fil;
 
 }
 vector<int> FilaCompresa::obtenerColumna(int x){
 	vector<int> col;
-	for(int i; i < colMat; i++){
+	for(int i = 0; i < colMat; i++){
 		if(columnas[i] == x){
 			col.push_back(valores[i]);
 		}
@@ -63,6 +66,7 @@ vector<int> FilaCompresa::obtenerFilaDispersa(int x){
 
 }
 vector<int> FilaCompresa::obtenerColumnaDispersa(int x){
+	vector<int> colDis (colMat, 0);
 
 }
 int FilaCompresa::obtenerNumeroElementos(){

@@ -57,9 +57,14 @@ vector<int> ColumnaCompresa::obtenerFila(int x){
 	return fil;
 }
 vector<int> ColumnaCompresa::obtenerColumna(int x){
-
+	vector<int> col;
+	for(int i = comprC[x-1]; i < comprC[x]; i++){
+		col[i] = valores[i];
+	}
 }
 vector<int> ColumnaCompresa::obtenerFilaDispersa(int x){
+	vector<int> filDis;
+
 }
 vector<int> ColumnaCompresa::obtenerColumnaDispersa(int x){
 	vector<int> colDis (filMat, 0);
