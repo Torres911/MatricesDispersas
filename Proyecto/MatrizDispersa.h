@@ -8,12 +8,12 @@
 
 class MatrizDispersa{
 	public:
-		vector<vector<int>> ObtenerMatrizCompleta();
-		vector<int> ObtenerFilas();
-		vector<int> ObtenerColumnas();
-		vector<int> ObtenerFilaDispersas();
-		vector<int> ObtenerColumnasDispersa();
-		int ObtenerNumeroElementos();
-		void ModificarPosicion(int x, int y, int v);
+		vector<vector<int>> obtenerMatrizCompleta();
+		vector<int> obtenerFilas();
+		vector<int> obtenerColumnas();
+		vector<int> obtenerFilaDispersas();
+		vector<int> obtenerColumnasDispersa();
+		int obtenerNumeroElementos();
+		void modificarPosicion(int x, int y, int v);
 
 };

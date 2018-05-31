@@ -1,33 +1,33 @@
-#include "OperacionesMatrizDispersa.h"
+#include "MatrizDispersa.h"
 
-MatrizCoordenada::MatrizCoordenada(vector< vector<int> > &matriz){
-
-}
-
-vector< vector<int> > MatrizCoordenada::ObtenerMatrizCompleta(){
+MatrizCoordenada::matrizCoordenada(vector< vector<int> > &matriz){
 
 }
 
-vector<int> MatrizCoordenada::ObtenerFilas(){
+vector< vector<int> > MatrizCoordenada::obtenerMatrizCompleta(){
 
 }
 
-vector<int> MatrizCoordenada::ObtenerColumnas(){
+vector<int> MatrizCoordenada::obtenerFilas(){
 
 }
 
-vector<int> MatrizCoordenada::ObtenerFilaDispersa(){
+vector<int> MatrizCoordenada::obtenerColumnas(){
 
 }
 
-vector<int> MatrizCoordenada::ObtenerColumnasDispersas(){
+vector<int> MatrizCoordenada::obtenerFilaDispersa(){
 
 }
 
-int MatrizCoordenada::ObtenerNumeroElementos(){
+vector<int> MatrizCoordenada::obtenerColumnasDispersas(){
 
 }
 
-void MatrizCoordenada::ModificarPosicion(int x, int y, int v){
+int MatrizCoordenada::obtenerNumeroElementos(){
+
+}
+
+void MatrizCoordenada::modificarPosicion(int x, int y, int v){
 
 }
