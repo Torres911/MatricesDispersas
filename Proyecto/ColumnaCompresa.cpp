@@ -1,0 +1,4 @@
+#include"ColumnaDispersa.h"
+
+
+

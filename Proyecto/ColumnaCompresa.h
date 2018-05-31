@@ -1,14 +1,12 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<stdio.h>
+#include"MatrizDispersa.h"
 
-using namespace std;
-
-class MatrizDispersa{
+class ColumnaCompresa: public MatrizDispersa{
+	private:
+		vector<int> valores;
+		vector<int> columnas;
+		vector<int> compr;
 	public:
-		void crearMatrizDispersa(vector< vector<int> > &mat);
-		vector< vector<int> > obtenerMatrizCompleta();
+		vector<vector<int>> obtenerMatrizCompleta();
 		vector<int> obtenerFila(int x);
 		vector<int> obtenerColumna(int x);
 		vector<int> obtenerFilaDispersa(int x);
