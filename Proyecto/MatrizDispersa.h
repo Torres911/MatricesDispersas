@@ -6,12 +6,7 @@
 #include<string>
 
 
-class MatrizCoordenada{
-	private:
-		vector<int> valores;
-		vector<int> filas;
-		vector<int> columnas;
-		int x, y;
+class MatrizDispersa{
 	public:
 		vector<vector<int>> ObtenerMatrizCompleta();
 		vector<int> ObtenerFilas();
