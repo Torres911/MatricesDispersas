@@ -2,6 +2,7 @@
 #include<vector>
 #include<algorithm>
 #include<stdio.h>
+#include"MatrizDispersa.h"
 
 using namespace std;
 

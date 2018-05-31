@@ -1,4 +1,4 @@
-#include "OperacionesMatrizDispersa"
+#include "OperacionesMatrizDispersa.h"
 
 bool OperacionesMatrizDispersa::verificarElemento(MatrizDispersa m1, int v){
 	bool isElem = false;
@@ -42,7 +42,7 @@ MatrizDispersa OperacionesMatrizDispersa::matrizTranspuesta(MatrizDispersa m1){
 	return temp;
 }
 
-MatrizDispersa OperacionMatrizDispersa::sumarMatrices(MatrizDispersa m1, MatrizDispersa m2){
+MatrizDispersa OperacionesMatrizDispersa::sumaMatrices(MatrizDispersa m1, MatrizDispersa m2){
 	MatrizDispersa temp;
 	
 	for(int i = 0; i < m1.filMat; i++){
@@ -53,13 +53,12 @@ MatrizDispersa OperacionMatrizDispersa::sumarMatrices(MatrizDispersa m1, MatrizD
 	return temp;
 }
 
-vector<int> productoMatrizVector(MatrizDispersa m1, vector<int> temp){
-	vector<int> temp1;
+MatrizDispersa productoMatrizVector(MatrizDispersa m1, vector<int> temp){
+	MatrizDispersa temp1;
 	
 	for(int i = 0; i < m1.filMat; i++){
 		for(int j = 0; j < m1.colMat; j++){
-			temp1[i] += m1.obtenerElemento(i,j) * temp[i];
+			temp1.modificarPosicion( i, j, (m1.obtenerElemento(i,j) * temp[i]));
 		}
 	}
-	return temp1;
 }
