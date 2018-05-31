@@ -1,18 +1,18 @@
 #include"ColumnaCompresa.h"
 
-void crearMatrizDispersa(vector< vector<int> > &mat){
+void ColumnaCompresa::crearMatrizDispersa(vector< vector<int> > &mat){
 	filMat = mat.size();
 	colMat = mat[0].size();
 	vector<int> val;
 	vector<int> fil;
 	vector<int> colComp;
 	int temp = 0;
-	for(int i = 0; i < mat.size(); i++){
+	for(int j = 0; j < colMat; j++){
 		colComp.push_back(temp);
-		for(int j = 0; i < mat.size[i]; j++){
+		for(int i = 0; i < filMat; i++){
 			if(mat[i][j] != 0){
 				val.push_back(mat[i][j]);
-				fila.push_back(mat[i]);
+				fil.push_back(mat[i]);
 				temp++;
 			}
 		}
@@ -22,28 +22,30 @@ void crearMatrizDispersa(vector< vector<int> > &mat){
 	comprC = colComp;
 
 }
-vector<vector<int>> obtenerMatrizCompleta(){
+vector<vector<int>> ColumnaCompresa::obtenerMatrizCompleta(){
+	vector<int> ref (colMat, 0);
+	vector<vector<int>> matC (filMat, ref);
 
 }
-vector<int> obtenerFila(int x){
+vector<int> ColumnaCompresa::obtenerFila(int x){
 
 }
-vector<int> obtenerColumna(int x){
+vector<int> ColumnaCompresa::obtenerColumna(int x){
 
 }
-vector<int> obtenerFilaDispersa(int x){
+vector<int> ColumnaCompresa::obtenerFilaDispersa(int x){
 
 }
-vector<int> obtenerColumnaDispersa(int x){
+vector<int> ColumnaCompresa::obtenerColumnaDispersa(int x){
 
 }
-int obtenerNumeroElementos(){
+int ColumnaCompresa::obtenerNumeroElementos(){
 
 }
-int obtenerElemento(int x, int y){
+int ColumnaCompresa::obtenerElemento(int x, int y){
 
 }
-void modificarPosicion(int x, int y, int v){
+void ColumnaCompresa::modificarPosicion(int x, int y, int v){
 
 }
 
