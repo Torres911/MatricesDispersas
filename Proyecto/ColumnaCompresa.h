@@ -1,9 +1,10 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<stdio.h>
+#include"MatrizDispersa.h"
 
-class MatrizDispersa{
+class ColumnaCompresa: public MatrizDispersa{
+	private:
+		vector<int> valores;
+		vector<int> columnas;
+		vector<int> compr;
 	public:
 		vector<vector<int>> obtenerMatrizCompleta();
 		vector<int> obtenerFila(int x);
@@ -12,5 +13,5 @@ class MatrizDispersa{
 		vector<int> obtenerColumnaDispersa(int x);
 		int obtenerNumeroElementos();
 		int obtenerElemento(int x, int y);
-		void modificarPosicion(int x, int y, int v);
+		void modificarPosicion(int x, int y, int v);n
 };
