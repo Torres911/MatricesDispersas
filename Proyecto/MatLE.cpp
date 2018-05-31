@@ -310,24 +310,3 @@ void MatLE::modificarPosicion(int i, int j, int elem){
     }
   }
 } 
-
-  
-int MatLE::obtenerMayorElem(){
-  Nodo *tmp = &mdLista[0];
-  int mayorElem = tmp->dato;
-  int n = mdLista.size();
-
-  for (int i = 0; i < n; i++){
-    tmp = &mdLista[i];
-    if(mayorElem < tmp->dato)
-      mayorElem = tmp->dato;           
-    while (tmp->sig != NULL){
-      tmp = tmp->sig;
-      if(mayorElem < tmp->dato)
-        mayorElem = tmp->dato;
-    }
-  }
-
-  return mayorElem;  
-}
-
