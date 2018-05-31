@@ -25,7 +25,15 @@ void ColumnaCompresa::crearMatrizDispersa(vector< vector<int> > &mat){
 vector<vector<int>> ColumnaCompresa::obtenerMatrizCompleta(){
 	vector<int> ref (colMat, 0);
 	vector<vector<int>> matC (filMat, ref);
-
+	int a = 0;
+	int b = 0;
+	for(int i = 0; i < comprC.size(); i++){
+		a = comprC[i + 1]-comprC[i];
+		for(j = 0; j < a; j++){
+			matC[filas[b]][i] = valores[b];
+			b++
+		}
+	}
 }
 vector<int> ColumnaCompresa::obtenerFila(int x){
 
