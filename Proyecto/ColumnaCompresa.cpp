@@ -14,20 +14,22 @@ void ColumnaCompresa::crearMatrizDispersa(vector< vector<int> > &mat){
 				val.push_back(mat[i][j]);
 				fil.push_back(i);
 				temp++;
-				cout << "xd" << endl;
 			}
 		}
 	}
 	colComp.push_back(temp);
 	valores = val;
-	cout << endl;
 	filas = fil;
 	comprC = colComp;
 
 }
 vector<vector<int>> ColumnaCompresa::obtenerMatrizCompleta(){
 	vector<int> ref (colMat, 0);
-	vector<vector<int>> matC (filMat, ref);
+	vector<vector<int>> matC;
+	for(int i = 0; i < filMat; i++){
+		matC.push_back(ref);
+	}
+
 	int a = 0;
 	int b = 0;
 	for(int i = 0; i < comprC.size(); i++){
@@ -37,11 +39,22 @@ vector<vector<int>> ColumnaCompresa::obtenerMatrizCompleta(){
 			b++;
 		}
 	}
+	for(int i = 0; i < colMat; i++){
+		for(int j = 0; i < filMat; j++){
+			cout << matC[i][j];
+		}
+		cout << endl;
+	}
 	return matC;
 }
 vector<int> ColumnaCompresa::obtenerFila(int x){
-	vector<int> fila;
-
+	vector<int> fil;
+	for(int i = 0; i < filMat; i++){
+		if(filas[i] == x){
+			fil.push_back(valores[i]);
+		}
+	}
+	return fil;
 }
 vector<int> ColumnaCompresa::obtenerColumna(int x){
 
@@ -49,16 +62,34 @@ vector<int> ColumnaCompresa::obtenerColumna(int x){
 vector<int> ColumnaCompresa::obtenerFilaDispersa(int x){
 }
 vector<int> ColumnaCompresa::obtenerColumnaDispersa(int x){
-
+	vector<int> colDis (filMat, 0);
+	int a = comprC[x + 1] - comprC[x];
+	for(int i = 0; i < a; i++){
+		colDis[filas[i]] = valores[i];
+	}
 }
 int ColumnaCompresa::obtenerNumeroElementos(){
 	return valores.size();
 }
 int ColumnaCompresa::obtenerElemento(int x, int y){
-
+	int v = 0;
+	int a = comprC[y + 1] - comprC[y];
+	if(a != 0){
+		for(int i = 0; i < a; i++){
+			if(filas[i] == x){
+				v = valores[i];
+			}
+		}
+	}
+	return v;
 }
 void ColumnaCompresa::modificarPosicion(int x, int y, int v){
-
+	int a = comprC[y + 1] - comprC[y];
+	for(int i = 0; i < a; i++){
+		if(filas[i] == x){
+			valores[i] = v;
+		}
+	}
 }
 
 

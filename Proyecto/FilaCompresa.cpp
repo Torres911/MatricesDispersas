@@ -25,7 +25,10 @@ void FilaCompresa::crearMatrizDispersa(vector< vector<int> > &mat){
 }
 vector<vector<int>> FilaCompresa::obtenerMatrizCompleta(){
 	vector<int> ref (colMat, 0);
-	vector<vector<int>> matC (filMat, ref);
+	vector<vector<int>> matC;
+	for(int k = 0; k < filMat; k++){
+		matC.push_back(ref);
+	}
 	int a = 0;
 	int b = 0;
 	for(int i = 0; i < comprF.size(); i++){
@@ -38,13 +41,25 @@ vector<vector<int>> FilaCompresa::obtenerMatrizCompleta(){
 	return matC;
 }
 vector<int> FilaCompresa::obtenerFila(int x){
+	vector<int> fil;
 
 
 }
 vector<int> FilaCompresa::obtenerColumna(int x){
-
+	vector<int> col;
+	for(int i; i < colMat; i++){
+		if(columnas[i] == x){
+			col.push_back(valores[i]);
+		}
+	}
+	return col;
 }
 vector<int> FilaCompresa::obtenerFilaDispersa(int x){
+	vector<int> filaDis (colMat, 0);
+	int a = comprF[x + 1] - comprF[x];
+	for(int i = 0; i < a; i++){
+		filaDis[columnas[i]] = valores[i];
+	}
 
 }
 vector<int> FilaCompresa::obtenerColumnaDispersa(int x){
@@ -54,10 +69,26 @@ int FilaCompresa::obtenerNumeroElementos(){
 	return valores.size();
 }
 int FilaCompresa::obtenerElemento(int x, int y){
-
+	int v = 0;
+	int a = comprF[x + 1] - comprF[x];
+	if(a != 0){
+		for(int i = 0; i < a; i++){
+			if(columnas[i] == y){
+				v = valores[i];
+			}
+		}
+	}
 }
 void FilaCompresa::modificarPosicion(int x, int y, int v){
+	int a = comprF[x + 1] - comprF[x];
+	for(int i = 0; i < a; i++){
+		if(columnas[i] == y){
+			valores[i] = v;
+			if(v == 0 and valores[i] != 0){
 
+			}
+		}
+	}
 }
 
 
