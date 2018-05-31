@@ -99,8 +99,6 @@ int Coordenada::obtenerElemento(int x, int y){
 	for(int i = 0; i < valores.size(); i++){
 		if(fila[i] == x && columna[i] == y){
 			temp = valores[i];
-		}else{
-			temp = 0;
 		}
 	}
 	return temp;
